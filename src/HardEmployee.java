@@ -1,6 +1,3 @@
-import javax.management.StandardEmitterMBean;
-import java.util.Scanner;
-
 public class HardEmployee {
 
     int numOfEmployees;
