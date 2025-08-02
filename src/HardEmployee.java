@@ -1,6 +1,5 @@
 public class HardEmployee {
 
-    int numOfEmployees;
     String name;
     double salary;
     String designation;
