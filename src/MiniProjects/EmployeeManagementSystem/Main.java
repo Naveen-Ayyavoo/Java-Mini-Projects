@@ -1,7 +1,9 @@
-    import java.util.Scanner;
+package MiniProjects.EmployeeManagementSystem;
 
-    public class Hard {
-        static HardEmployee[] employees = null;
+import java.util.Scanner;
+
+    public class EmployeeMain {
+        static Employee[] employees = null;
         static Scanner scanner = new Scanner(System.in);
         public static void main(String[] args) {
 
@@ -31,11 +33,11 @@
                         int num = scanner.nextInt();
                         scanner.nextLine();
 
-                        employees= new HardEmployee[num];
+                        employees= new Employee[num];
 
                         for (int i = 0; i < num; i++) {
                             System.out.printf("Enter Employee %d\n", i + 1);
-                            employees[i] = new HardEmployee();
+                            employees[i] = new Employee();
                             System.out.println();
                         }
                         System.out.println("Added Successfully!");
@@ -47,7 +49,7 @@
                                 """);
                         else {
                             int total = 0;
-                            for (HardEmployee employee :employees) {
+                            for (Employee employee :employees) {
                                 employee.printDetails();
                                 total++;
                             }
@@ -60,7 +62,7 @@
                                 Please Enter choice 1.
                                 """);
 
-                        else for (HardEmployee employee :Hard.employees ) {
+                        else for (Employee employee : EmployeeMain.employees ) {
                             employee.applyBonus();
                             System.out.println("Bonus Applied Successfully!");
                         }
