@@ -1,8 +1,11 @@
+package MiniProjects.MatrixUtilityToolkit;
+
+// Copy from here
 import java.util.Scanner;
 
-public class Medium {
+public class Main {
     static Scanner scanner = new Scanner(System.in);
-    static MediumMatrix matrix = null;
+    static Matrix matrix = null;
     public static void main(String[] args) {
 
         int choice;
@@ -30,7 +33,7 @@ public class Medium {
                     int cols = scanner.nextInt();
 
 
-                    matrix = new MediumMatrix(rows, cols);
+                    matrix = new Matrix(rows, cols);
                 }
                 else if (choice == 2) {
                     if (matrix != null) matrix.sum();

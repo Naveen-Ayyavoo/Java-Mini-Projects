@@ -1,6 +1,9 @@
+package MiniProjects.StudentScoreCalculator;
+
+// Copy from here
 import java.util.Scanner;
 
-public class Easy {
+public class Main {
     public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
@@ -10,7 +13,7 @@ public class Easy {
         System.out.print("Enter the Name: ");
         String name = scanner.nextLine();
 
-        EasyStudent student = new EasyStudent(name);
+        Student student = new Student(name);
 
         System.out.print("Enter the Marks (10 20 30 ): ");
         String[] stringMarks = scanner.nextLine().split(" ");

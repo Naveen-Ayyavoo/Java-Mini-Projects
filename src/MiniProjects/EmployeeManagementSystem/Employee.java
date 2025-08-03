@@ -1,20 +1,23 @@
-public class HardEmployee {
+package MiniProjects.EmployeeManagementSystem;
+
+// Copy from here
+public class Employee {
 
     String name;
     double salary;
     String designation;
 
-    HardEmployee(){
+    Employee(){
 
             System.out.print("Enter the Name:");
-            name = Hard.scanner.nextLine();
+            name = Main.scanner.nextLine();
 
             System.out.print("Enter the Salary: ");
-            salary = Hard.scanner.nextDouble();
-            Hard.scanner.nextLine();
+            salary = Main.scanner.nextDouble();
+            Main.scanner.nextLine();
 
             System.out.print("Enter the Designation: ");
-            designation = Hard.scanner.nextLine();
+            designation = Main.scanner.nextLine();
 
     }
 

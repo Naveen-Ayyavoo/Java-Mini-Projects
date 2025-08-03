@@ -1,8 +1,9 @@
 package MiniProjects.EmployeeManagementSystem;
 
+// Copy from here
 import java.util.Scanner;
 
-    public class EmployeeMain {
+    public class Main {
         static Employee[] employees = null;
         static Scanner scanner = new Scanner(System.in);
         public static void main(String[] args) {
@@ -62,7 +63,7 @@ import java.util.Scanner;
                                 Please Enter choice 1.
                                 """);
 
-                        else for (Employee employee : EmployeeMain.employees ) {
+                        else for (Employee employee : Main.employees ) {
                             employee.applyBonus();
                             System.out.println("Bonus Applied Successfully!");
                         }

@@ -1,9 +1,12 @@
-public class EasyStudent {
+package MiniProjects.StudentScoreCalculator;
+
+// Copy from here
+public class Student {
 
     String name;
     int[] marks;
 
-    EasyStudent(String name){
+    Student(String name){
         this.name = name;
     }
 

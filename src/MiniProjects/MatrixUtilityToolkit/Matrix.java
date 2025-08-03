@@ -1,14 +1,17 @@
-public class MediumMatrix {
+package MiniProjects.MatrixUtilityToolkit;
+
+// Copy from here
+public class Matrix {
 
     int[][] matrix;
 
-    MediumMatrix(int rows, int cols){
+    Matrix(int rows, int cols){
         matrix = new int[rows][cols];
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 System.out.printf("Enter the Elements at index %d %d: ",i,j);
-                matrix[i][j] = Medium.scanner.nextInt();
+                matrix[i][j] = Main.scanner.nextInt();
             }
             System.out.println();
         }
